@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Kothuru Aparna 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="particles"></div>
+  <div id="confetti"></div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Play music">🎵 <span>Play our song</span></button>
+  <audio id="birthdaySong" loop preload="auto">
+    <source src="janmalu-enni-maarina.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 01: INTRO -->
+  <section class="screen active" id="intro">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="intro-card">
+      <div class="eyebrow">A little secret made with love ✨</div>
+      <div class="date-pill">02 • OCTOBER • 2005</div>
+      <h1>For my girl,<br><span>Aparna</span> 💗</h1>
+      <p class="lead">There is a tiny surprise waiting for someone who means a lot to me.</p>
+
+      <div class="gift-wrap">
+        <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div><div class="sparkle s3">✦</div>
+        <button id="gift" class="gift" aria-label="Open the gift">
+          <span class="gift-lid"></span>
+          <span class="gift-box"></span>
+          <span class="ribbon ribbon-v"></span>
+          <span class="ribbon ribbon-h"></span>
+          <span class="bow left"></span><span class="bow right"></span>
+        </button>
+      </div>
+
+      <button id="openGift" class="primary-btn">OPEN YOUR SURPRISE 🎁</button>
+      <p class="tiny">Tap the gift, birthday girl 👀</p>
+    </div>
+  </section>
+
+  <!-- 02: COUNTDOWN -->
+  <section class="screen" id="countdownScreen">
+    <div class="count-card">
+      <p class="eyebrow">Wait for it...</p>
+      <div id="countNumber">3</div>
+      <p>Something special is about to begin ✨</p>
+    </div>
+  </section>
+
+  <!-- 03: HERO -->
+  <section class="screen" id="hero">
+    <div class="hero-inner">
+      <div class="balloon-row"><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span></div>
+      <p class="eyebrow">02 October • Your day • Your story</p>
+      <h2>Happy Birthday</h2>
+      <h1>Kothuru Aparna</h1>
+      <div class="cake">🎂</div>
+      <p class="hero-copy">21 years of being wonderfully, uniquely <b>you</b>. Here's to another beautiful chapter. 🥹💗</p>
+      <div class="hero-buttons">
+        <button class="primary-btn next" data-next="message">READ MY MESSAGE 💌</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04: MESSAGE -->
+  <section class="screen" id="message">
+    <div class="content-card message-card">
+      <p class="eyebrow">From Sugali Swapna</p>
+      <h2>Dear Aparna...</h2>
+      <div class="letter">
+        <p id="typedMessage"></p><span class="cursor">|</span>
+      </div>
+      <button class="primary-btn next" data-next="memories">OUR LITTLE MEMORIES 📸</button>
+    </div>
+  </section>
+
+  <!-- 05: MEMORIES -->
+  <section class="screen" id="memories">
+    <div class="wide-card">
+      <p class="eyebrow">Our memories ✨</p>
+      <h2>Little moments, big memories</h2>
+      <p class="sub">A few moments I will always keep 💗</p>
+      <div class="photo-grid">
+        <figure><img src="images/photo1.jpg" alt="Memory 1"><figcaption>Our first memory 💗</figcaption></figure>
+        <figure><img src="images/photo2.jpg" alt="Memory 2"><figcaption>That crazy day 😂</figcaption></figure>
+        <figure><img src="images/photo3.jpg" alt="Memory 3"><figcaption>Our favorite moment ✨</figcaption></figure>
+        <figure><img src="images/photo4.jpg" alt="Memory 4"><figcaption>Forever us 🫶</figcaption></figure>
+      </div>
+      <button class="primary-btn next" data-next="reasons">WHY YOU'RE MY GIRL ❤️</button>
+    </div>
+  </section>
+
+  <!-- 06: REASONS -->
+  <section class="screen" id="reasons">
+    <div class="wide-card">
+      <p class="eyebrow">Tap a card</p>
+      <h2>Why you're special</h2>
+      <div class="reason-grid">
+        <button class="reason" data-text="Because your smile has a way of making even a bad day feel a little lighter. 🌸">🌸<small>Your smile</small></button>
+        <button class="reason" data-text="Because your crazy side is one of my favorite things about you. Never lose it. 😂">😂<small>Your crazy side</small></button>
+        <button class="reason" data-text="Because our friendship is made of small moments that somehow became huge memories. 🤝">🤝<small>Our friendship</small></button>
+        <button class="reason" data-text="Because you're simply Aparna. That's already a pretty special reason. ✨">💗<small>Just you</small></button>
+      </div>
+      <div id="reasonText">Choose one... I have something to tell you 💌</div>
+      <button class="primary-btn next" data-next="secret">ONE LAST SURPRISE 🔐</button>
+    </div>
+  </section>
+
+  <!-- 07: SECRET -->
+  <section class="screen" id="secret">
+    <div class="secret-card">
+      <div class="lock" id="lock">🔐</div>
+      <p class="eyebrow">A message only Aparna should read</p>
+      <h2>Unlock this 💝</h2>
+      <p class="sub">Press and hold the heart for 2 seconds.</p>
+      <button id="holdHeart" class="heart-btn">❤️</button>
+      <div id="secretReveal" class="secret-reveal">
+        <h3>Janmalu enni maarina... 🫶</h3>
+        <p>Some friendships deserve to be carried through every version of life. Whatever changes, I hope there will always be a little place in your world for me.</p>
+        <strong>Happy Birthday, my girl. ❤️</strong>
+      </div>
+      <button id="finalBtn" class="primary-btn hidden">MAKE A WISH ✨</button>
+    </div>
+  </section>
+
+  <!-- 08: FINAL -->
+  <section class="screen" id="final">
+    <canvas id="fireworks"></canvas>
+    <div class="final-card">
+      <p class="eyebrow">02 • 10 • 2026</p>
+      <h2>Happy Birthday</h2>
+      <h1>Aparna 💗</h1>
+      <div class="big-cake">🎂</div>
+      <p>May this year bring you more laughter, more confidence, beautiful opportunities, and memories you will never want to forget.</p>
+      <p class="signature">Always keep smiling,<br><b>— Sugali Swapna ❤️</b></p>
+      <button id="wishBtn" class="primary-btn">MAKE A WISH 🎆</button>
+      <p id="wishDone" class="wish-done">✨ Wish sent to the universe...</p>
+      <button id="restart" class="text-btn">Replay the surprise ↻</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
